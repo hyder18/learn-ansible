@@ -21,7 +21,7 @@
   hosts: localhost
   tasks:
     - name: print play variables from files
-      vars:
+      vars: ##this vars only for this task,task on same play cannot access it
         URL: task.example.com
       ansible.builtin.debug:
         msg: url = {{ url }}
