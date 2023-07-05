@@ -30,6 +30,6 @@
 - name: variable from inventory
   hosts: all
   tasks:
-    - name: print play variables from inventory
+    - name: print play variable from inventory
       ansible.builtin.debug:
         msg: URL = {{ URL }}
