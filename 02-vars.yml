@@ -13,6 +13,6 @@
   vars_files:
     var.yml
   tasks:
-  -name: print variable from files
+  -name: print play variables from files
   ansible.builtin.debug:
     msg: url= {{url}
