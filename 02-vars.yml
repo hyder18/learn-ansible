@@ -20,8 +20,16 @@
 - name: task level variables
   hosts: localhost
   tasks:
-    - name: print play variables from files
+    - name: print play variables
       vars:
         URL: task.example.com
+      ansible.builtin.debug:
+        msg: URL = {{ URL }}
+
+
+- name: variable from inventory
+  hosts: all
+  tasks:
+    - name: print play variables from inventory
       ansible.builtin.debug:
         msg: URL = {{ URL }}
