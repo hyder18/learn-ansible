@@ -17,3 +17,11 @@
     ansible.builtin.debug:
       msg: url = {{ url }}
 
+- name: task level variables
+  hosts: localhost
+  tasks:
+    - name: print play variables from files
+      vars:
+        URL: task.example.com
+      ansible.builtin.debug:
+        msg: url = {{ url }}
