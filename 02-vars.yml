@@ -15,4 +15,4 @@
   tasks:
   -name: print play variables from files
   ansible.builtin.debug:
-    msg: url= {{url}
+    msg: url = {{url}
