@@ -12,6 +12,7 @@
   hosts: localhost
   vars_files:
     var.yml
-  tasks: print variable from files
+  tasks:
+  -name: print variable from files
   ansible.builtin.debug:
     msg: url= {{url}
