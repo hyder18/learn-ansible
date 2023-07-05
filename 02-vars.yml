@@ -28,7 +28,7 @@
 
 
 - name: variable from inventory
-  hosts: localhost
+  hosts: all
   tasks:
     - name: print play variable from inventory
       ansible.builtin.debug:
