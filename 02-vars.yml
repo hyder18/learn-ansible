@@ -32,4 +32,6 @@
   tasks:
     - name: print play variable from inventory
       ansible.builtin.debug:
-        msg: URL = {{ URL }}
+        msg: "URL = {{ URL }},host name of server = {{ansible_user}}"
+
+
