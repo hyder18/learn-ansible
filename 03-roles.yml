@@ -1,4 +1,4 @@
 - name: role level varaiable
-  hosts: local host
+  hosts: localhost
   roles:
     - demo
